@@ -1,0 +1,187 @@
+.header{
+
+    position: fixed;
+    width: 100%;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    z-index: 10;
+
+}
+
+.ul{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.li_link{
+
+    margin-inline: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+.li{
+
+    padding: 10px 10px;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--light-color);
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+.li i{
+
+    margin-right: 5px;
+
+}
+
+.li_link:hover .li{
+
+    color: var(--dark-color-2);
+
+}
+
+/* phone-header-style */
+
+.nav_ph{
+
+    display: none;
+
+}
+
+.bar {
+
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 25px;
+
+}
+
+.bar span {
+
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background: var(--light-color);
+    border-radius: 100px;
+    display: inline-block;
+    transition: 0.3s ease;
+    left: 0;
+
+}
+
+.bar span.top {
+
+    top: 0;
+
+}
+
+.bar span.middle {
+
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.bar span.bottom {
+
+    bottom: 0;
+
+}
+
+/* input[type]:checked ~ span.top {
+
+    top: 50%;
+    left: 15%;
+    transform: rotate(45deg) translateY(-50%);
+
+}
+
+input[type]:checked ~ span.bottom {
+
+    top: 50%;
+    left: 8px;
+    transform: rotate(-45deg)  translateY(-50%);
+
+}
+
+input[type]:checked ~ span.middle {
+
+    transform: translateX(-20px);
+    opacity: 0;
+
+} */
+
+/* responsive-style */
+
+@media(max-width: 800px){
+
+    .header{
+
+        padding: 0px 20px;
+
+    }
+
+}
+
+@media(max-width: 736px){
+
+    .header{
+
+        background-color: var(--dark-color) !important;
+
+    }
+
+    .ul{
+
+        position: fixed;
+        top: 59px;
+        right: -105%;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        box-shadow: -10px 15px 10px var(--shadow-color);
+        transition: 0.3s;
+        background-color: var(--dark-color);
+        opacity: 0;
+
+    }
+
+    .li_link{
+
+        width: 100%;
+        margin: 0px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px !important;
+        border-bottom: 1px solid var(--light-color);
+
+    }
+
+    .li{
+
+        padding: 10px 0px;
+        margin: 10px 0px;
+        text-align: center;
+        /* background-color: brown; */
+
+    }
+
+    .nav_ph{
+
+        display: inline-block;
+
+    }
+
+}

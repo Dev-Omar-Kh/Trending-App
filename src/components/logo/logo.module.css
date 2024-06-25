@@ -1,0 +1,13 @@
+.logo_link {
+
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+.logo span{
+
+    margin-inline: 3px;
+    color: var(--dark-color-2);
+
+}

@@ -1,0 +1,196 @@
+.card{
+
+    position: relative;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    margin: 15px 5px;
+
+}
+
+.type{
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: var(--dark-color-2);
+    color: var(--dark-color);
+    cursor: pointer;
+
+}
+
+.type i{
+
+    margin-left: 5px;
+
+}
+
+.img_cont{
+
+    position: relative;
+    width: 100%;
+    height: 490px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    object-fit: cover;
+    box-shadow: 0px 10px 20px var(--darker-color-025);
+
+}
+
+.img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: 0.3s;
+
+}
+
+.overview{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom , transparent , var(--dark-color-098)50%);
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.overview h3{
+
+    width: 100%;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: var(--light-color);
+    /* text-shadow: 2px 2px 2px var(--darker-color); */
+
+}
+
+.overview h3 i{
+
+    margin-right: 3px;
+    color: var(--dark-color-2);
+    text-shadow: none;
+
+}
+
+.overview p{
+
+    font-size: 14px;
+    color: var(--light-color);
+    /* text-shadow: 2px 2px 2px var(--darker-color); */
+    overflow: hidden;
+
+}
+
+.img_cont:hover .overview{
+
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.img_cont:hover .img{
+
+    scale: 1.3;
+    rotate: -5deg;
+
+}
+
+.h3{
+
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--light-color);
+
+}
+
+.h5{
+
+    margin: 5px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--light-color-05);
+
+}
+
+.rate_box{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.rate_value{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.rate_value p{
+
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-color-2);
+
+}
+
+.rate_value span{
+
+    margin-inline: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--light-color-05);
+
+}
+
+.rate_box i{
+
+    font-size: 18px;
+    color: var(--dark-color-2);
+
+}
+
+/* responsive-style */
+
+@media(max-width: 1025px){
+
+    .card{
+
+        width: 300px;
+
+    }
+
+}
+
+@media(max-width: 426px){
+
+    .type{
+
+        border-radius: 5px;
+        font-size: 14px;
+
+    }
+
+}

@@ -1,0 +1,161 @@
+.footer{
+
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--light-color);
+
+}
+
+.social_card{
+
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.Btn{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.svgContainer{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+    z-index: 2;
+
+}
+
+.svgContainer i{
+
+    font-size: 18px;
+    color: var(--light-color);
+
+}
+
+.BG{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: 1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+    font-size: 0px;
+
+}
+
+.github .BG{
+
+    background: #181818;
+
+}
+
+.linkdin .BG{
+
+    background: #0077b5;
+
+}
+
+.whatsapp .BG{
+
+    background: #075e54;
+
+}
+
+.discord .BG{
+
+    background: #7289da;
+
+}
+
+.Btn:hover .BG{
+
+    transform: scale(1.5);
+    font-size: 20px;
+    color: white;
+
+}
+
+.Btn:hover .svgContainer{
+
+    border: 1px solid rgba(216, 216, 216, 0.466);
+    background-color: rgba(209, 209, 209, 0.466);
+    backdrop-filter: blur(4px);
+
+}
+
+
+/* responsive-style */
+
+@media(max-width : 769px){
+
+    .footer{
+
+        padding: 10px 20px;
+
+    }
+
+}
+
+@media(max-width : 769px){
+
+    /* .footer{
+
+        flex-direction: column;
+        align-items: center;
+
+    } */
+
+    .social_card{
+
+        gap: 20px;
+
+    }
+
+}
+
+@media(max-width : 510px){
+
+    .footer{
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .social_card{
+
+        margin-block: 15px;
+
+    }
+
+}
